@@ -1,0 +1,89 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Import CSS */
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
+
+:root {
+  font-size: 87.5%; /* 14px - Mobile First */
+
+  /* Cores (Colors) */
+
+--BG-IntroAndEmail: hsl(217, 28%, 15%);
+--BG-Main: hsl(218, 28%, 13%);
+--BG-Footer: hsl(216, 53%, 9%);
+--BG-Testimonials: hsl(219, 30%, 18%);
+
+--Primary: hsl(176, 68%, 64%);
+--Secondary: hsl(198, 60%, 50%);
+--Error: hsl(0, 100%, 63%);
+
+--Neutral: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  outline: transparent;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--Neutral);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--BG-IntroAndEmail);
+}
+
+body,
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 375px; /* Mobile First */
+}
+
+/* LIGHT THEME */
+
+.light:root {
+  --BG-Main: #DDF5FF;
+  --BG-IntroAndEmail: hsl(0, 0%, 100%);
+  --BG-Testimonials: hsl(218, 28%, 13%);
+
+  --Neutral: hsl(216, 53%, 9%);
+}
+
+/* TABLET & DESKTOP RESPONSIVE */
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 100%; /* 16px - Desktop */
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1440px; /* Desktop */
+  }
+}

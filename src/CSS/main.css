@@ -1,0 +1,588 @@
+.mainContainer {
+  margin-top: 1.43rem;
+  padding-bottom: 24rem;
+
+  background-color: var(--BG-Main);
+}
+
+/* Section Hero */
+
+.mainContainer .hero {
+  position: relative;
+
+  text-align: center;
+
+  background-color: var(--BG-IntroAndEmail);
+}
+
+.mainContainer .heroContent {
+  position: inherit;
+
+  padding-inline: 2.15rem;
+  z-index: 1;
+}
+
+.mainContainer .hero h1 {
+  margin-top: 2.58rem;
+
+  font-size: 1.72rem;
+  line-height: 2.75rem;
+}
+
+.mainContainer .hero p {
+  width: 95%;
+  padding-block: 2.29rem;
+
+  line-height: 1.5rem;
+}
+
+.mainContainer .hero a {
+  display: inline-block;
+
+  padding: 1.15rem 5.72rem;
+  border-radius: 30px;
+
+  font-weight: 700;
+
+  color: #FFF;
+  background: linear-gradient(90deg, var(--Primary) 0%, var(--Secondary) 100%);
+}
+
+.mainContainer .hero a:hover,
+.mainContainer .hero a:focus {
+  background: var(--Primary);
+}
+
+.mainContainer .bgWrapper {
+  position: absolute;
+  
+  height: 212px;
+  width: 100%;
+  bottom: 0px;
+  
+  background-color: var(--BG-Main);
+}
+
+.mainContainer .bgCurvy {
+  position: absolute;
+
+  width: 100%;
+  height: 141px;
+  top: -141px;
+
+  background: url(/src/assets/bg-curvy-mobile.svg) no-repeat;
+}
+
+/* Section Company Infos */
+
+.mainContainer .companyInfos {
+  margin-top: 9.43rem;
+
+  padding-inline: 2rem;
+}
+
+.mainContainer .companyInfos .services {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  gap: 6rem;
+}
+
+.companyInfos .services article .iconAccess {
+  width: 4.572rem;
+  height: 4.29rem;
+  margin: 0 auto;
+
+  background: url(/src/assets/icon-access-anywhere.svg) no-repeat;
+  background-size: contain;
+}
+
+.companyInfos .services article img {
+  width: 4.572rem;
+}
+
+.companyInfos .services article h3 {
+  margin-top: 2.29rem;
+
+  font-size: 1.29rem;
+}
+
+.companyInfos .services article p {
+  margin-top: 1rem;
+}
+
+.mainContainer .companyInfos .cta {
+  margin-top: 11.43rem;
+}
+
+.mainContainer .companyInfos .cta h2 {
+  margin-top: 3.43rem;
+
+  font-size: 1.29rem;
+}
+
+.mainContainer .companyInfos .cta p {
+  margin-top: 1.43rem;
+}
+
+.mainContainer .companyInfos .cta a {
+  font-family: "Open Sans", sans-serif;
+  display: inline-flex;
+
+  margin-top: 1.43rem;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--Primary);
+  gap: 6px;
+
+  font-size: 0.86rem;
+
+  color: var(--Primary);
+}
+
+.mainContainer .companyInfos .cta a:hover,
+.mainContainer .companyInfos .cta a:focus {
+  color: var(--Neutral);
+
+  border-color: var(--Neutral);
+}
+
+.mainContainer .companyInfos .cta .arrowIcon {
+  width: 16px;
+  height: 16px;
+
+  background: url(/src/assets/icon-arrow.svg);
+}
+
+.mainContainer .companyInfos .cta a:hover .arrowIcon,
+.mainContainer .companyInfos .cta a:focus .arrowIcon {
+  width: 16px;
+  height: 16px;
+
+  background: url(/src/assets/icon-arrow-hover.svg);
+}
+
+/* Section Testimonials */
+
+.mainContainer .testimonials {
+  margin-top: 10.86rem;
+}
+
+.mainContainer .testimonials .iconQuotes {
+  width: 22px;
+  height: 16px;
+  margin-left: 3.72rem;
+}
+
+.testimonials .wrapperTestimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding-bottom: 11.43rem;
+  gap: 1.72rem;
+}
+
+
+.testimonials .wrapperTestimonials article {
+  max-width: 280px;
+  padding: 2rem 1.43rem 1.43rem;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.05);
+
+  font-size: 0.72rem;
+
+  background-color: var(--BG-Testimonials);
+}
+
+.testimonials .wrapperTestimonials article p {
+  color: #FFF;
+}
+
+.testimonials .wrapperTestimonials article .profile {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1.15rem;
+  gap: .58rem;
+}
+
+.testimonials .wrapperTestimonials article .profile img {
+  width: 1.72rem;
+
+  border-radius: 50%;
+}
+
+.testimonials .wrapperTestimonials article .profile strong {
+  display: block;
+  margin-bottom: .29rem;
+
+  color: #FFF;
+}
+
+.testimonials .wrapperTestimonials article .profile span {
+  font-size: .58rem;
+
+  color: #FFF;
+}
+
+/* Section CTA Form */
+
+.mainContainer .ctaForm {
+  position: relative;
+  
+  padding-inline: 1.43rem;
+
+  z-index: 1;
+}
+
+.mainContainer .wrapperCtaForm {
+  text-align: center;
+  
+  max-width: 336px;
+  margin: 0 auto -500px;
+  padding: 2.58rem 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+
+  background-color: var(--BG-IntroAndEmail);
+}
+
+.mainContainer .ctaForm h2 {
+  font-size: 1.29rem;
+
+  color: #FFF;
+}
+
+.mainContainer .ctaForm p {
+  margin-block: 1.43rem 1.72rem;
+
+  line-height: 1.5rem;
+
+  color: #FFF;
+}
+
+.mainContainer .ctaForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer .ctaForm form input {
+  padding: 1.15rem 1rem 1.15rem 2rem;
+  border: 2px solid transparent;
+  border-radius: 24px;
+
+  color: #000;
+
+  transition: .3s;
+}
+
+.mainContainer .ctaForm form input:hover,
+.mainContainer .ctaForm form input:focus {
+  border: 2px solid var(--Primary);
+}
+
+.mainContainer .ctaForm form input::placeholder {
+  font-size: .86rem;
+
+  color: rgb(185, 185, 185);
+}
+
+.mainContainer .ctaForm form button {
+  cursor: pointer;
+
+  padding: 1.15rem 1rem 1.15rem;
+  margin-top: 1.72rem;
+  border: 0;
+  border-radius: 24px;
+
+  font-weight: 700;
+
+  color: #FFF;
+  background: linear-gradient(90deg, var(--Primary) 0%, var(--Secondary) 100%);
+}
+
+.mainContainer .ctaForm form button:hover,
+.mainContainer .ctaForm form button:focus {
+  background: var(--Primary);
+}
+
+.mainContainer .ctaForm form .error {
+  display: none;
+  text-align: start;
+
+  padding: 8px 0 0 28px;
+
+  font-size: .72rem;
+  font-weight: 700;
+
+  color: var(--Error);
+}
+
+/* LIGHT THEME */
+
+.light:root {
+  .mainContainer .bgCurvy {
+    background: url(/src/assets/bg-curvy-mobile-Light.svg);
+  }
+
+  .companyInfos .services article .iconAccess {
+    background: url(/src/assets/icon-access-anywhere-Light.svg);
+    background-size: contain;
+  }
+
+  .mainContainer .companyInfos .cta .arrowIcon {
+    background: url(/src/assets/icon-arrow-Light.svg);
+  }
+
+  .mainContainer .companyInfos .cta a:hover,
+  .mainContainer .companyInfos .cta a:focus {
+    color: var(--Secondary);
+
+    border-color: var(--Secondary);
+  }
+
+  .mainContainer .companyInfos .cta a:hover .arrowIcon,
+  .mainContainer .companyInfos .cta a:focus .arrowIcon {
+    background: url(/src/assets/icon-arrow-hover-Light.svg);
+  }
+
+  .mainContainer .wrapperCtaForm {
+    background-color: var(--BG-Testimonials);
+  }
+}
+
+/* TABLET RESPONSIVE */
+@media screen and (min-width: 768px) {
+  .mainContainer {
+    margin-top: 5.75rem;
+  }
+
+  /* Section Hero */
+
+  .mainContainer .heroContent {
+    padding-bottom: 200px;
+  }
+
+  .mainContainer .hero h1 {
+    max-width: 90%;
+    margin-inline: auto;
+
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  .mainContainer .hero p {
+    max-width: 90%;
+    margin: 0 auto;
+
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }  
+
+  .mainContainer .bgWrapper {
+    height: auto;
+  }
+
+  .mainContainer .bgCurvy {
+    width: 100%;
+    height: 449px;
+    top: -449px;
+
+    background: url(/src/assets/bg-curvy-desktop.svg) bottom no-repeat;
+    background-size: contain;
+  }
+
+  /* Section Company Infos */
+
+  .mainContainer .companyInfos {
+    margin-top: 0;
+  }
+
+  .mainContainer .companyInfos .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 1.5rem;
+  }
+
+  .companyInfos .services article {
+    max-width: 340px;
+  }  
+
+  .companyInfos .services article .customH3 {
+    margin-top: .63rem;
+  }
+
+  .mainContainer .companyInfos .cta {
+    text-align: center;
+  }
+
+  .mainContainer .companyInfos .cta h2 {
+    font-size: 2.5rem;
+  }
+
+  .mainContainer .companyInfos .cta p {
+    max-width: 80%;
+    margin-inline: auto;
+  }
+
+  /* Section Testimonials */
+
+  .mainContainer .testimonials {
+    margin-top: 8.75rem;
+    padding-inline: 2rem;
+  }
+
+  .mainContainer .testimonials .iconQuotes {
+    width: 55px;
+    height: 45px;
+    margin: 0 0 -1.25rem 1.75rem;
+  }
+
+  .testimonials .wrapperTestimonials {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 1.75rem;
+  }
+
+  .testimonials .wrapperTestimonials article {
+    max-width: 300px;
+    padding: 1.75rem;
+
+    font-size: .75rem;
+  }
+
+  /* Section CTA Form */
+
+  .mainContainer .wrapperCtaForm {
+    max-width: 860px;
+    padding: 2.75rem 4.5rem;
+
+    margin-bottom: -575px;
+  }
+
+  .mainContainer .ctaForm h2 {
+    font-size: 2rem;
+  }
+
+  /* LIGHT THEME */
+
+  .light:root {
+    .mainContainer .bgCurvy {
+      width: 100%;
+      height: 449px;
+      top: -449px;
+
+      background: url(/src/assets/bg-curvy-desktop-Light.svg) bottom no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+/* DESKTOP RESPONSIVE */
+@media screen and (min-width: 1024px) {
+  /* Section Hero */
+
+  .mainContainer .hero h1 {
+    max-width: 64%;
+  }
+
+  .mainContainer .hero p {
+    max-width: 45%;
+  }
+
+  /* Section Company Infos */
+
+  .mainContainer .companyInfos {
+    padding-inline: 5rem;
+  }
+
+  .mainContainer .companyInfos .services {
+    max-width: 1120px;
+    margin-inline: auto;
+
+    gap: 8rem;
+  }
+
+  .mainContainer .companyInfos .cta {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 3.5rem;
+  }
+
+  .mainContainer .companyInfos .cta img {
+    max-width: 612px;
+  }
+
+  .mainContainer .companyInfos .cta .ctaContent {
+    width: 556px;
+
+    margin-block: auto;
+  }
+
+  .mainContainer .companyInfos .cta h2 {
+    width: 80%;
+    margin: 0;
+  }
+
+  .mainContainer .companyInfos .cta p {
+    margin-inline: 0;
+    max-width: 100%;
+  }
+
+  /* Section Tertimonials */
+
+  .mainContainer .testimonials {
+    padding-inline: 5rem;
+  }
+
+  .mainContainer .testimonials .iconQuotes {
+    margin-left: 3.75rem;
+  }
+
+  .testimonials .wrapperTestimonials article {
+    max-width: 360px;
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .testimonials .wrapperTestimonials article p {
+    font-size: .9375rem;
+  }
+
+  /* Section CTA Form */
+
+  .mainContainer .wrapperCtaForm {
+    margin-bottom: -525px;
+  }
+
+  .mainContainer .wrapperCtaForm form {
+    position: relative;
+    flex-direction: row;
+
+    gap: 1.75rem;
+  }
+
+  .mainContainer .wrapperCtaForm form input {
+    flex: 1;
+
+    font-size: 1rem;
+  }
+
+  .mainContainer .wrapperCtaForm form button {
+    padding: 1rem 2.5rem;
+    margin: 0;
+  }
+
+  .mainContainer .wrapperCtaForm form .error {
+    position: absolute;
+
+    bottom: -24px;
+  }
+}

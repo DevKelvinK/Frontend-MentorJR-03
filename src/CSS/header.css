@@ -1,0 +1,145 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.79rem 1.43rem;
+  gap: 20px;
+}
+
+.headerContainer .logo {
+  width: 5.72rem;
+  height: 1.72rem;
+
+  background: url(/src/assets/logo.svg) no-repeat;
+  background-size: contain;
+}
+
+/* ----- Change Theme ------ */
+
+.headerContainer .wrapperHeader {
+  position: relative;
+
+  width: 100%;
+}
+
+.headerContainer .wrapperHeader .wrapperChangeTheme {
+  position: absolute;
+
+  right: 0;
+  top: -6px;
+}
+
+.wrapperHeader .wrapperChangeTheme .themeBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 4px;
+  border-radius: 50px;
+  gap: 4px;
+
+  background-color: var(--Neutral);
+}
+
+.wrapperHeader .wrapperChangeTheme .themeBox label {
+  cursor: pointer;
+}
+
+.wrapperChangeTheme .themeBox .bgIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+
+  background-color: var(--Neutral);
+
+  transition: .3s;
+}
+
+.wrapperChangeTheme .themeBox i {
+  color: var(--BG-IntroAndEmail);
+}
+
+.wrapperChangeTheme .themeBox input {
+  position: absolute;
+
+  opacity: 0;
+  z-index: -1;
+}
+
+.wrapperChangeTheme .themeBox input:hover ~ .bgIcon,
+.wrapperChangeTheme .themeBox input:focus ~ .bgIcon {
+  box-shadow: 0 0 10px var(--Secondary);
+
+  background-color: var(--Primary);
+}
+
+.wrapperChangeTheme .themeBox input:checked ~ .bgIcon {
+  background-color: var(--Primary);
+}
+
+.wrapperChangeTheme .themeBox .selected {
+  background-color: var(--Primary);
+}
+
+/* -------------------------- */
+
+.headerContainer .navMenu {
+  display: flex;
+
+  gap: 1.79rem;
+}
+
+.headerContainer .navMenu a {
+  transition: .3s;
+}
+
+.headerContainer .navMenu a:hover,
+.headerContainer .navMenu a:focus {
+  text-decoration: underline;
+
+  font-weight: 700;
+}
+
+/* LIGHT THEME */
+
+.light:root {
+  .headerContainer .logo {
+    background: url(/src/assets/logo-Light.svg);
+    background-size: contain;
+  }
+}
+
+/* SMALL MOBILE RESPONSIVE */
+@media screen and (max-width: 330px) {
+  .headerContainer .navMenu {
+    gap: 1.15rem;
+  }
+}
+
+/* TABLET RESPONSIVE */
+@media screen and (min-width: 768px) {
+  .headerContainer .logo {
+    width: 11rem;
+    height: 3.25rem;
+  }
+
+  .headerContainer .wrapperHeader .wrapperChangeTheme {
+    top: 6px;
+  }
+}
+
+/* DESKTOP RESPONSIVE */
+@media screen and (min-width: 1024px) {
+  .headerContainer {
+    padding: 5rem 5rem 0;
+
+    gap: 0;
+  }
+}

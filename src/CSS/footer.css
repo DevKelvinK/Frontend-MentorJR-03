@@ -1,0 +1,185 @@
+.footerContainer {
+  position: relative;
+  padding: 18rem 2rem 2.86rem;
+  z-index: 0;
+
+  background-color: var(--BG-Footer);
+}
+
+.footerContainer .logoWhite {
+  padding-left: .86rem;
+  margin-bottom: 3.15rem;
+}
+
+.footerContainer .LocationAndContacts {
+  display: flex;
+  flex-direction: column;
+  
+  width: 90%;
+  margin-bottom: 6rem;
+  gap: 1.72rem;
+}
+
+.footerContainer .LocationAndContacts p {
+  line-height: 1.75rem;
+}
+
+.footerContainer .LocationAndContacts p,
+.footerContainer .LocationAndContacts span {
+  color: #FFF;
+}
+
+.footerContainer .LocationAndContacts .location {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 1.72rem;
+}
+
+.footerContainer .LocationAndContacts .contact {
+  font-family: "Open Sans", sans-serif;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1.43rem;
+  gap: 1.72rem;
+}
+
+.footerContainer .LocationAndContacts .contact:last-child {
+  margin: 0;
+}
+
+.footerContainer .columnsNav {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.72rem;
+}
+
+.footerContainer .columnsNav ul {
+  list-style: none;
+}
+
+.footerContainer .columnsNav ul li {
+  margin-top: 1.43rem;
+}
+
+.footerContainer .columnsNav ul li:first-child {
+  margin: 0;
+}
+
+.footerContainer .columnsNav a {
+  color: #FFF;
+
+  transition: .3s;
+}
+
+.footerContainer .columnsNav a:hover,
+.footerContainer .columnsNav a:focus {
+  font-weight: 700;
+}
+
+.footerContainer .socialMediaNav {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 5.72rem;
+  gap: 1.15rem;
+}
+
+.footerContainer .socialMediaNav i {
+  display: flex;
+
+  padding: 8px;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+
+  font-size: 16px;
+
+  color: #FFF;
+
+  transition: .3s;
+}
+
+.footerContainer .iconFacebook:hover i, 
+.footerContainer .iconFacebook:focus i {
+  border-color: #0866ff;
+
+  color: #0866ff;
+}
+
+.footerContainer .iconTwitter:hover i, 
+.footerContainer .iconTwitter:focus i {
+  border-color: #00acee;
+
+  color: #00acee;
+}
+
+.footerContainer .iconInstagram:hover i, 
+.footerContainer .iconInstagram:focus i {
+  border-color: #ce125b;
+
+  color: #ce125b;
+}
+
+/* TABLET RESPONSIVE */
+@media screen and (min-width: 768px) {
+  .footerContainer .footerInfos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerContainer .columnsNav {
+    flex-direction: row;
+  }
+
+  .footerContainer .LocationAndContacts {
+    width: 60%;
+  }
+
+  .footerContainer .LocationAndContacts p {
+    width: 350px;
+  }
+
+  .footerContainer .socialMediaNav {
+    margin-top: 0;
+  }
+}
+
+/* DESKTOP RESPONSIVE */
+@media screen and (min-width: 1024px) {
+  .footerContainer {
+    padding: 15.75rem 5rem 5.75rem;
+  }
+
+  .footerContainer .logoWhite {
+    padding: 0;
+  }
+
+  .footerContainer .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 1rem;
+  }
+
+  .footerContainer .footerInfos {
+    gap: 9rem;
+  }
+
+  .footerContainer .LocationAndContacts {
+    flex-direction: row;
+
+    width: auto;
+  }
+
+  .footerContainer .LocationAndContacts .contact {
+    width: 190px;
+  }
+
+  .footerContainer .socialMediaNav {
+    margin-inline: auto;
+  }
+}
