@@ -11,7 +11,6 @@ Este projeto envolve a criação de uma Landing Page responsiva com troca de tem
 - JavaScript
 
 ## Como Executar o Projeto
-
 1. Clone o repositório:
   ```bash
   git clone https://github.com/DevKelvinK/Frontend-MentorJR-03
@@ -20,15 +19,7 @@ Este projeto envolve a criação de uma Landing Page responsiva com troca de tem
   ```bash
   cd MentorJR_03
   ```
-3. Instale as dependências:
-  ```bash
-  npm install
-  ```
-4. Inicie o servidor de desenvolvimento com Vite:
-  ```bash
-  npm run dev
-  ```
-5. Abra o navegador e acesse a URL fornecida pelo Vite (geralmente `http://localhost:3000`).
+3. Abra o arquivo `index.html` no seu navegador preferido.
 
 ## Autor
 
